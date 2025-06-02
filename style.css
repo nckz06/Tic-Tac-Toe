@@ -1,0 +1,137 @@
+body {
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.jogo-velha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+}
+
+.row-square {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: black;
+}
+
+.start {
+    border-bottom: 5px solid black;
+}
+
+.middle {
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.end {
+    border-top: 5px solid black;
+}
+
+.square {
+    text-align: center;
+    width: 50px;
+    display: inline-block;
+    padding: 40px;
+    font-size: 60px;
+    cursor: pointer;
+    color: transparent;
+    background-color: antiquewhite;
+}
+
+.placar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.placar-content small {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.jogadores {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1%;
+    background-color: black;
+    border: 5px solid black;
+}
+
+.jogador {
+    font-size: 30px;
+    width: 250px;
+    background-color: antiquewhite;
+}
+
+.pontuacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1%;
+    background-color: black;
+    border: 5px solid black;
+}
+
+.placar {
+    font-size: 50px;
+    font-weight: 800;
+    width: 250px;
+    height: 150px;
+    padding-top: 100px;
+    background-color: antiquewhite;
+}
+
+.content-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
+}
+
+.content-player, .content-winner {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.result p{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+button {
+    margin-top: 10px;
+    width: 150px;
+    height: 80px;
+    background-color: dodgerblue;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Jogo da Velha</h1>
+    </header>
+    
+    <main>
+        <div class="main-content">
+            <!-- ESTRUTURA DO JOGO DA VELHA -->
+            <div class="jogo-velha">
+                <div class="row-square start">
+                    <div class="square" id="square-1" onclick="selectionSquare(this.id)">-</div>
+                    <div class="square" id="square-2" onclick="selectionSquare(this.id)">-</div>
+                    <div class="square" id="square-3" onclick="selectionSquare(this.id)">-</div>
+                </div>
+                <div class="row-square middle">
+                    <div class="square" id="square-4" onclick="selectionSquare(this.id)">-</div>
+                    <div class="square" id="square-5" onclick="selectionSquare(this.id)">-</div>
+                    <div class="square" id="square-6" onclick="selectionSquare(this.id)">-</div>
+                </div>
+                <div class="row-square end">
+                    <div class="square" id="square-7" onclick="selectionSquare(this.id)">-</div>
+                    <div class="square" id="square-8" onclick="selectionSquare(this.id)">-</div>
+                    <div class="square" id="square-9" onclick="selectionSquare(this.id)">-</div>
+                </div>
+            </div>
+
+            <!-- PLACAR DO JOGO -->
+            <div class="placar-content">
+                <h2>Pontuação dos Jogadores</h2>
+                <div class="jogadores">
+                    <label class="jogador" id="jogador-x">Jogador 1</label>
+                    <label class="jogador" id="jogador-o">Jogador 2</label>
+                </div>
+                <div class="pontuacao">
+                    <label class="placar" id="pontuacao-x">0</label>
+                    <label class="placar" id="pontuacao-o">0</label>
+                </div>
+                <!-- <small>O nome dos jogadores são editáveis</small> -->
+            </div>
+        </div>
+
+        <div class="content-info">
+            <!-- VENCENDOR DO JOGO -->
+            <div class="content-winner">
+                <label>Vencedor: </label>
+                <label id="vencedor-selecionado"></label>
+            </div>
+
+            <!-- JOGADOR SELECIONADO -->
+            <div class="content-player">
+                <label id="jogador"></label>
+                <label id="jogador-selecionado"></label>
+            </div>
+    
+            <!-- BOTÃO PARA REINICIAR -->
+            <div>
+                <button onclick="reset()">Reiniciar</button>
+            </div>
+        </div>
+
+        <div class="result">
+            <p id="jogador-vencedor"></p>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
